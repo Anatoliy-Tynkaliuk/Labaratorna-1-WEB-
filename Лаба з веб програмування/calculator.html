@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div
+        class="logo-container"
+        onmouseover="showAuthorInfo()"
+        onmouseout="hideAuthorInfo()"
+      >
+        <img class="logo-image" src="image\Logo.png" alt="" />
+        <div class="authorInfo" id="authorInfo">
+          <p>Тинкалюк Анатолій</p>
+          <p>Україна</p>
+        </div>
+      </div>
+
+      <ul class="nav-list">
+        <li><a href="dot.html">Найближчі точки</a></li>
+        <li><a href="gen_password.html">Генерація паролю</a></li>
+        <li><a href="game.html">Гра</a></li>
+        <li><a href="#" class="current-page">Калькулятор</a></li>
+      </ul>
+    </div>
+    <img src="image\фон для сторінки 1.webp" alt="" />
+
+    <div class="quastion">
+      <h1>Калькулятор</h1>
+      <label for="points">Введіть вираз:</label>
+      <input type="text" id="expression" oninput="calculate()" />
+      <div id="result">Результат:</div>
+    </div>
+
+    <script src="calculator.js"></script>
+  </body>
+</html>

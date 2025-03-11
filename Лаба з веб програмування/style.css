@@ -1,0 +1,139 @@
+body{
+    margin: 0;
+}
+
+/*  HEADER 
+START CODE */
+ul{
+    margin: 0;
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.header{
+    z-index: 2;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 50px;
+    height: 50px;
+    background-color: black;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    margin-top: 10px;
+}
+
+.authorInfo {
+    display: none;
+    color: white;
+    text-align: center;
+    margin-top: 45px; 
+    background-color: black; 
+    padding: 10px; 
+    border-radius: 5px
+}
+
+.authorInfo p {
+    line-height: 2; 
+    margin: 2px 0; 
+}
+
+.logo-image{
+    width: 40px; 
+    height: 35px; 
+}
+
+
+
+.nav-list li{
+    display: inline-block;
+    padding: 0 40px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.current-page{
+    color: #8989ff;
+}
+
+/*  HEADER 
+END CODE */
+
+
+
+/* Задній фон */
+img {
+    position: absolute;
+    z-index: 0;
+    height: auto;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+/* Клас quastion */
+/* SART CODE */
+
+
+.quastion{
+    height: 400px;
+    width: 500px;
+    border-radius: 10px;
+    margin: 200px auto;
+    background-color: rgb(245, 244, 244);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    position: relative;
+    
+}
+.quastion h1{
+    padding-top: 50px;
+}
+
+.quastion label{
+    font-size: 20px;
+}
+
+.quastion input{
+    margin: 10px auto;
+    border-radius: 10px;
+    height: 20px;
+
+}
+
+.quastion button{
+    margin: 5px auto;
+    height: 45px;
+    padding: 10px 20px;
+    min-width: 100px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.copy-button {
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+/* Клас quastion */
+/* END CODE */

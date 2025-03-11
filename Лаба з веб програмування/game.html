@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div
+        class="logo-container"
+        onmouseover="showAuthorInfo()"
+        onmouseout="hideAuthorInfo()"
+      >
+        <img class="logo-image" src="image\Logo.png" alt="" />
+        <div class="authorInfo" id="authorInfo">
+          <p>Тинкалюк Анатолій</p>
+          <p>Україна</p>
+        </div>
+      </div>
+      <ul class="nav-list">
+        <li><a href="dot.html">Найближчі точки</a></li>
+        <li><a href="gen_password.html">Генерація паролю</a></li>
+        <li><a href="#" class="current-page">Гра</a></li>
+        <li><a href="calculator.html">Калькулятор</a></li>
+      </ul>
+    </div>
+    <img src="image\фон для сторінки 1.webp" alt="" />
+
+    <div class="quastion">
+      <h1>Гра "Камінь-Ножиці-Папір"</h1>
+      <p>Виберіть свій варіант:</p>
+      <div class="button-group">
+        <button onclick="playGame('камінь')">Камінь</button>
+        <button onclick="playGame('ножиці')">Ножиці</button>
+        <button onclick="playGame('папір')">Папір</button>
+      </div>
+      <div id="gameResult"></div>
+    </div>
+
+    <script src="game.js"></script>
+  </body>
+</html>
